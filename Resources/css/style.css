@@ -1,0 +1,486 @@
+/*
+Green color : #74d14c
+*/
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/* Basic Setup */
+/*--------------------------------------------------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    background-color: #eae8e8;
+    color: #484848;
+    font-family: 'PT-Sans','Arial','sans-serif';
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+
+}
+
+.row{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.box{
+    padding: 1%;
+}
+
+section{
+    padding: 80px;
+    border-bottom: 1px solid #000;
+}
+
+/*----- HEADINGS ------- */
+
+h1{
+    font-size: 200%;
+    word-spacing: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+h1:after{
+    display: block;
+    height: 2px;
+    background-color: #74d14c;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px; 
+}
+
+h2{
+    font-size: 120%;
+    margin-bottom: 15px;
+    color:  #f2f2f2;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 120%;
+    margin-bottom: 40px;
+    color:  #f2f2f2;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 45px;
+}
+
+/*----- ICONS ------- */
+
+.icon-big{
+    font-size: 200%;
+    color: #74d14c;
+   margin-left: 230px;
+}
+
+.icon-small{
+     display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #74d14c;
+    font-size: 120%;
+    margin-right: 10px;
+}
+
+
+/* --------MAIN NAVI----- */
+
+.main-nav{
+    list-style: none;
+    margin-top: 65px;
+    float: right;
+}
+
+
+.main-nav li{
+     display: inline-block;
+     margin-left: 40px;
+     font-size: 100%;
+}
+
+a:link,
+a:visited{
+    color: #f2f2f2;
+    text-decoration: none;
+    padding-bottom: 2px;
+    transition: border-bottom 0.2s, color 0.2s;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:active{
+    border-bottom: 2px solid #74d14c;
+}
+
+.nav-logo{
+    margin-top: 0px;
+    height: 150px;
+    width: auto;
+    float: left;
+}
+
+.logo-black{
+    display: none;
+    margin-top: 0px;
+    height: 60px;
+    width: auto;
+    float: left; 
+}
+
+/* ------STICKY NAVI ------ */
+
+.sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 1px 1px #74d14c;
+    z-index: 9999;
+}
+
+.sticky .main-nav{
+    margin-top: 20px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 17px 0;
+    color: #555;
+}
+
+.sticky .nav-logo{ display: none;}
+.sticky .logo-black{ display: block; }
+
+/* ------MOBILE NAVI ------ */
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------------*/
+/* HOME PAGE   */
+/*-----------------------------------------------------------------------*/
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/main.jpg);
+     height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+}
+
+.main-p{
+    font-size: 140%;
+    text-align: center;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    margin-top: 50px;
+}
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    border: 1px solid #74d14c;
+    color: #74d14c;
+    margin-left: 41%;
+    margin-top: 7%;
+}
+
+.btn:hover,
+.btn:active{
+    border: 1px solid #74d14c;
+    color: #fff;
+    background-color: #5bac39;
+}
+
+
+/*-------------------------------------------------------------*/
+/*  NET & WIFI  MANAGEMENT*/     
+/*-------------------------------------------------------------*/
+
+.net-man{
+    background-image: linear-gradient(rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7)),url(img/section.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-p{
+    font-size: 110%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-top: 50px;
+    line-height: 110%;
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+.sec-i{
+    width: 100%;
+    height: auto;
+}
+
+
+/*-------------------------------------------------------------*/
+/*  MULTI-CLOUD SERVICES*/     
+/*-------------------------------------------------------------*/
+
+
+.cloud-services{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/cloud.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*-------------------------------------------------------------*/
+/*  SERVER MANAGEMENT */     
+/*-------------------------------------------------------------*/
+
+
+.section-server{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/server.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-------------------------------------------------------------*/
+/*  SECURITY MANAGEMENT */     
+/*-------------------------------------------------------------*/
+
+
+.section-security{
+     background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/security.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-------------------------------------------------------------*/
+/* DATA CENTER COLOCATION   */     
+/*-------------------------------------------------------------*/
+
+.section-cities{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/city.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    color: #f2f2f2;
+}
+
+.city-link:link,
+.city-link:visited{
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: none;
+    text-transform: none;
+    
+}
+
+.city-link:hover,
+.city-link:active{
+    color: #74d14c;
+    transition: color 0.2s;
+}
+
+
+/*-------------------------------------------------------------*/
+/* PARTNERS   */     
+/*-------------------------------------------------------------*/
+
+.section-partners{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/support.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box-p img{
+    width: 35%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 120px;
+}
+
+/*-------------------------------------------------------------*/
+/*  CUSTOMER SUPPORT   */     
+/*-------------------------------------------------------------*/
+
+.section-support{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)),url(img/customer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact{
+    color:  #f2f2f2;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/*-------------------------------------------------------------*/
+/*      FOOTER   */     
+/*-------------------------------------------------------------*/
+
+footer{
+    background-color: #121212;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    border: 0;
+    text-decoration: none;
+    color: #989898;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; 
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #74d14c;
+}
+ 
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram{
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover{
+    color: #55acee;
+}
+
+.ion-logo-googleplus:hover{
+    color: #dc4e41;
+}
+
+.ion-logo-instagram:hover{
+    color: #517fa4;
+}
+
+.ion-logo-linkedin:hover{
+    color: #0077b5;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*-------------------------------------------------------------*/
+/*     ANIMATIONS   */     
+/*-------------------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-7{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-6,
+.js--wp-7{
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-7.animated{
+    opacity: 1;
+}
